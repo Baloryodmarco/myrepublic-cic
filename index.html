@@ -48,7 +48,7 @@
   </div>
 
   <div class="hero-card" aria-label="Ringkasan layanan">
-    <div class="signal-icon">⌁</div>
+    <div class="signal-icon">MR</div>
 
     <h2>Pengajuan Lebih Praktis</h2>
 
@@ -75,22 +75,40 @@
 </section>
 
     <section id="coverage" class="section-pad coverage-section">
-      <div class="section-header">
-        <p class="eyebrow">Fitur utama</p>
-        <h2>Cek Apakah Rumah Anda Tercover MyRepublic</h2>
-        <p>Aktifkan lokasi perangkat Anda agar titik koordinat pemasangan lebih akurat. Anda tetap bisa mengisi alamat dan patokan rumah secara manual.</p>
-      </div>
-      <div class="coverage-card">
-        <div>
-          <h3>Ambil Titik Lokasi GPS</h3>
-          <p>Setelah klik tombol di bawah, browser akan meminta izin lokasi. Pastikan Anda berada di lokasi pemasangan.</p>
-          <button class="btn btn-primary" id="getLocationBtn" type="button">Gunakan Lokasi Saya</button>
-        </div>
-        <div class="location-result" id="locationResult">
-          <p class="muted">Koordinat belum diambil.</p>
-        </div>
-      </div>
-    </section>
+  <div class="section-header">
+    <p class="eyebrow">Cek coverage</p>
+    <h2>Cek Titik Lokasi Pemasangan MyRepublic</h2>
+    <p>
+      Gunakan lokasi perangkat Anda untuk membantu Maura mengecek area coverage dengan lebih akurat.
+      Data lokasi hanya digunakan untuk kebutuhan pengecekan coverage dan pengajuan pemasangan.
+    </p>
+  </div>
+
+  <div class="coverage-card">
+    <div>
+      <h3>Ambil Titik GPS Rumah Anda</h3>
+      <p>
+        Klik tombol di bawah saat Anda berada di lokasi pemasangan. Browser akan meminta izin lokasi,
+        lalu sistem akan mencatat koordinat dan membuat link Google Maps untuk proses verifikasi.
+      </p>
+
+      <button class="btn btn-primary" id="getLocationBtn" type="button">
+        Gunakan Lokasi Saya
+      </button>
+
+      <p class="privacy-mini">
+        Lokasi Anda tidak digunakan untuk keperluan lain di luar pengecekan coverage dan proses pengajuan layanan.
+      </p>
+    </div>
+
+    <div class="location-result" id="locationResult">
+      <p class="muted">Koordinat belum diambil.</p>
+      <p class="muted small-text">
+        Setelah lokasi berhasil diambil, latitude, longitude, akurasi GPS, dan link Google Maps akan muncul di sini.
+      </p>
+    </div>
+  </div>
+</section>
 
     <section id="packages" class="section-pad">
   <div class="section-header">
