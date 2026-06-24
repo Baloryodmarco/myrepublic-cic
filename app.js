@@ -134,17 +134,18 @@ async function submitLeadToSupabase(payload) {
       apikey: SUPABASE_PUBLISHABLE_KEY,
       Authorization: `Bearer ${SUPABASE_PUBLISHABLE_KEY}`,
       'Content-Type': 'application/json',
-      Prefer: 'return=representation',
+      Prefer: 'return=minimal',
     },
     body: JSON.stringify(payload),
   });
 
   if (!response.ok) {
     const errorText = await response.text();
+    console.error('Supabase insert error:', errorText);
     throw new Error(errorText || 'Gagal mengirim data ke database.');
   }
 
-  return response.json();
+  return true;
 }
 
 if (leadForm) {
