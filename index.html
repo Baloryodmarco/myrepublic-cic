@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyRepublic CIC | Cek Coverage & Pasang Internet</title>
+  <meta name="description" content="Cek coverage MyRepublic, pilih paket internet, dan kirim pengajuan pemasangan langsung melalui Maura." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="#hero" aria-label="MyRepublic CIC Home">
+      <span class="brand-mark">M</span>
+      <span>MyRepublic CIC</span>
+    </a>
+    <nav class="nav-links" aria-label="Navigasi utama">
+      <a href="#coverage">Cek Coverage</a>
+      <a href="#packages">Paket</a>
+      <a href="#form">Daftar</a>
+      <a href="dashboard.html">Dashboard</a>
+    </nav>
+    <a class="btn btn-small btn-primary" id="waTop" href="#" target="_blank" rel="noopener">Chat Maura</a>
+  </header>
+
+  <main>
+    <section id="hero" class="hero section-pad">
+      <div class="hero-content">
+        <p class="eyebrow">Sales Representative: Maura</p>
+        <h1>Pasang Internet Rumah MyRepublic Lebih Mudah & Cepat</h1>
+        <p class="hero-subtitle">Cek coverage area rumah Anda, pilih paket internet, dan kirim pengajuan pemasangan langsung dari website ini.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#coverage">Cek Coverage Sekarang</a>
+          <a class="btn btn-secondary" id="waHero" href="#" target="_blank" rel="noopener">Chat WhatsApp Maura</a>
+        </div>
+        <div class="trust-list" aria-label="Keunggulan utama">
+          <span>✓ Titik GPS tersimpan</span>
+          <span>✓ Konsultasi paket</span>
+          <span>✓ Follow-up lebih cepat</span>
+        </div>
+      </div>
+      <div class="hero-card" aria-label="Ringkasan layanan">
+        <div class="signal-icon">⌁</div>
+        <h2>Cek lokasi pemasangan</h2>
+        <p>Gunakan GPS perangkat Anda untuk membantu pengecekan area coverage dan pengajuan pemasangan.</p>
+        <div class="mini-stat-grid">
+          <div><strong>24/7</strong><span>Form online</span></div>
+          <div><strong>GPS</strong><span>Koordinat rumah</span></div>
+          <div><strong>WA</strong><span>Follow-up cepat</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="coverage" class="section-pad coverage-section">
+      <div class="section-header">
+        <p class="eyebrow">Fitur utama</p>
+        <h2>Cek Apakah Rumah Anda Tercover MyRepublic</h2>
+        <p>Aktifkan lokasi perangkat Anda agar titik koordinat pemasangan lebih akurat. Anda tetap bisa mengisi alamat dan patokan rumah secara manual.</p>
+      </div>
+      <div class="coverage-card">
+        <div>
+          <h3>Ambil Titik Lokasi GPS</h3>
+          <p>Setelah klik tombol di bawah, browser akan meminta izin lokasi. Pastikan Anda berada di lokasi pemasangan.</p>
+          <button class="btn btn-primary" id="getLocationBtn" type="button">Gunakan Lokasi Saya</button>
+        </div>
+        <div class="location-result" id="locationResult">
+          <p class="muted">Koordinat belum diambil.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="packages" class="section-pad">
+      <div class="section-header">
+        <p class="eyebrow">Pilihan paket</p>
+        <h2>Paket Internet MyRepublic</h2>
+        <p>Pilih paket yang paling sesuai dengan kebutuhan rumah Anda. Paket dapat ditambah atau diperbarui kembali melalui update berikutnya.</p>
+      </div>
+      <div class="package-grid package-grid-two" id="packageGrid">
+        <article class="package-card popular" data-package="Striker 225Mbps">
+          <span class="badge">Streaming Pesta Bola</span>
+          <h3>Striker</h3>
+          <p class="speed">225 Mbps</p>
+          <p class="price">Rp 250rb<span>/bulan</span></p>
+          <p class="old-price">Harga normal: Rp 250rb</p>
+          <ul>
+            <li>Benefit: Vidio Platinum</li>
+            <li>Benefit: Fola Play</li>
+            <li>Cocok untuk streaming pesta bola</li>
+          </ul>
+          <button class="btn btn-primary choose-package" type="button">Pilih Paket</button>
+        </article>
+        <article class="package-card" data-package="Nexus 300Mbps">
+          <span class="badge">Paling Fleksibel</span>
+          <h3>Nexus</h3>
+          <p class="speed">300 Mbps</p>
+          <p class="price">Rp 300rb<span>/bulan</span></p>
+          <p class="old-price">Harga normal: Rp 365rb</p>
+          <ul>
+            <li>Free Speed Boost 400 Mbps</li>
+            <li>Cocok untuk 10 device lebih</li>
+            <li>CCTV dan streaming kualitas HD</li>
+          </ul>
+          <button class="btn btn-outline choose-package" type="button">Pilih Paket</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-pad benefits-section">
+      <div class="section-header">
+        <p class="eyebrow">Benefit</p>
+        <h2>Kenapa Daftar Lewat Maura?</h2>
+      </div>
+      <div class="benefit-grid">
+        <div class="benefit-card"><span>📍</span><h3>Lokasi Akurat</h3><p>Titik GPS rumah langsung tercatat untuk membantu verifikasi coverage.</p></div>
+        <div class="benefit-card"><span>💬</span><h3>Konsultasi Paket</h3><p>Bisa tanya paket yang paling cocok sebelum melanjutkan pemasangan.</p></div>
+        <div class="benefit-card"><span>⚡</span><h3>Follow-up Cepat</h3><p>Data pengajuan masuk rapi sehingga lebih mudah diproses.</p></div>
+        <div class="benefit-card"><span>🧾</span><h3>Data Tersimpan</h3><p>Alamat, paket, dan lokasi tersimpan dalam dashboard leads.</p></div>
+      </div>
+    </section>
+
+    <section class="section-pad steps-section">
+      <div class="section-header">
+        <p class="eyebrow">Cara pemasangan</p>
+        <h2>Proses Pengajuan yang Simpel</h2>
+      </div>
+      <div class="steps">
+        <div><span>1</span><p>Cek lokasi rumah Anda</p></div>
+        <div><span>2</span><p>Pilih paket internet</p></div>
+        <div><span>3</span><p>Isi data pengajuan</p></div>
+        <div><span>4</span><p>Maura menghubungi Anda</p></div>
+        <div><span>5</span><p>Teknisi melakukan pemasangan</p></div>
+      </div>
+    </section>
+
+    <section id="form" class="section-pad form-section">
+      <div class="section-header">
+        <p class="eyebrow">Form pengajuan</p>
+        <h2>Kirim Pengajuan Pemasangan</h2>
+        <p>Isi data di bawah. Untuk versi demo ini, data tersimpan di browser Anda dan bisa dilihat melalui dashboard lokal.</p>
+      </div>
+      <form id="leadForm" class="lead-form">
+        <fieldset>
+          <legend>Step 1 — Lokasi Pemasangan</legend>
+          <div class="form-grid">
+            <label>Alamat lengkap<textarea name="address" rows="3" required placeholder="Contoh: Jl. Melati No. 10, dekat minimarket..."></textarea></label>
+            <label>Kota / Kabupaten<input name="city" required placeholder="Contoh: Jakarta Selatan" /></label>
+            <label>Kecamatan<input name="district" required placeholder="Contoh: Jagakarsa" /></label>
+            <label>Kelurahan<input name="village" required placeholder="Contoh: Lenteng Agung" /></label>
+            <label>RT / RW<input name="rtrw" placeholder="Contoh: RT 03 / RW 05" /></label>
+            <label>Patokan rumah<input name="landmark" placeholder="Contoh: rumah pagar hitam sebelah warung" /></label>
+            <label>Jenis tempat<select name="propertyType" required><option value="">Pilih jenis tempat</option><option>Rumah</option><option>Kos</option><option>Apartemen</option><option>Ruko</option><option>Kantor</option></select></label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Step 2 — Data Customer</legend>
+          <div class="form-grid">
+            <label>Nama lengkap<input name="fullName" required placeholder="Nama customer" /></label>
+            <label>Nomor WhatsApp aktif<input name="whatsapp" required placeholder="08xxxxxxxxxx" /></label>
+            <label>Email opsional<input type="email" name="email" placeholder="nama@email.com" /></label>
+            <label>Waktu terbaik dihubungi<select name="contactTime" required><option value="">Pilih waktu</option><option>Pagi</option><option>Siang</option><option>Sore</option><option>Malam</option></select></label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Step 3 — Pilih Paket</legend>
+          <div class="form-grid">
+            <label>Paket yang diminati<select name="packageName" id="packageSelect" required><option value="">Pilih paket</option><option>Striker 225Mbps</option><option>Nexus 300Mbps</option></select></label>
+            <label>Promo yang dipilih<input name="promo" placeholder="Contoh: Promo bulan ini / belum tahu" /></label>
+            <label>Catatan tambahan<textarea name="notes" rows="3" placeholder="Contoh: ingin dipasang hari Sabtu jika coverage tersedia"></textarea></label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Step 4 — Konfirmasi</legend>
+          <label class="checkbox-label">
+            <input type="checkbox" name="consent" required />
+            <span>Saya setuju data saya digunakan untuk pengecekan coverage dan proses pemasangan layanan internet.</span>
+          </label>
+        </fieldset>
+
+        <input type="hidden" name="latitude" id="latitude" />
+        <input type="hidden" name="longitude" id="longitude" />
+        <input type="hidden" name="accuracy" id="accuracy" />
+        <input type="hidden" name="mapsUrl" id="mapsUrl" />
+        <button class="btn btn-primary btn-full" type="submit">Kirim Pengajuan</button>
+        <p class="form-message" id="formMessage" role="status"></p>
+      </form>
+    </section>
+
+    <section class="section-pad faq-section">
+      <div class="section-header">
+        <p class="eyebrow">FAQ</p>
+        <h2>Pertanyaan yang Sering Ditanyakan</h2>
+      </div>
+      <div class="faq-list">
+        <details><summary>Apakah pengecekan coverage gratis?</summary><p>Ya, pengajuan dan pengecekan awal dapat dilakukan tanpa biaya melalui website ini.</p></details>
+        <details><summary>Apakah saya wajib mengaktifkan GPS?</summary><p>Sangat disarankan agar lokasi pemasangan lebih akurat. Anda tetap perlu mengisi alamat lengkap.</p></details>
+        <details><summary>Apakah saya langsung pasti bisa pasang?</summary><p>Belum tentu. Data lokasi akan digunakan untuk verifikasi coverage sebelum pemasangan dijadwalkan.</p></details>
+        <details><summary>Apakah data saya aman?</summary><p>Data digunakan untuk pengecekan coverage dan proses pemasangan. Hindari mengirim data sensitif sebelum diminta resmi.</p></details>
+      </div>
+    </section>
+
+    <section class="cta-section section-pad">
+      <h2>Masih bingung pilih paket?</h2>
+      <p>Chat Maura sekarang untuk konsultasi pemasangan MyRepublic.</p>
+      <a class="btn btn-light" id="waBottom" href="#" target="_blank" rel="noopener">Chat WhatsApp</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><strong>MyRepublic CIC</strong></p>
+    <p>Sales Representative: Maura · WhatsApp: 081327424953 · Area layanan: Seluruh area coverage MyRepublic</p>
+    <p class="muted">Prototype MVP. Logo dan paket resmi dapat diperbarui setelah aset tersedia.</p>
+  </footer>
+
+  <a class="floating-wa" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="Chat WhatsApp Maura">WA</a>
+  <script src="app.js"></script>
+</body>
+</html>
