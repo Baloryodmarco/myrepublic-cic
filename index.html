@@ -68,40 +68,59 @@
     </section>
 
     <section id="packages" class="section-pad">
-      <div class="section-header">
-        <p class="eyebrow">Pilihan paket</p>
-        <h2>Paket Internet MyRepublic</h2>
-        <p>Pilih paket yang paling sesuai dengan kebutuhan rumah Anda. Paket dapat ditambah atau diperbarui kembali melalui update berikutnya.</p>
-      </div>
-      <div class="package-grid package-grid-two" id="packageGrid">
-        <article class="package-card popular" data-package="Striker 225Mbps">
-          <span class="badge">Streaming Pesta Bola</span>
-          <h3>Striker</h3>
-          <p class="speed">225 Mbps</p>
-          <p class="price">Rp 250rb<span>/bulan</span></p>
-          <p class="old-price">Harga normal: Rp 250rb</p>
-          <ul>
-            <li>Benefit: Vidio Platinum</li>
-            <li>Benefit: Fola Play</li>
-            <li>Cocok untuk streaming pesta bola</li>
-          </ul>
-          <button class="btn btn-primary choose-package" type="button">Pilih Paket</button>
-        </article>
-        <article class="package-card" data-package="Nexus 300Mbps">
-          <span class="badge">Paling Fleksibel</span>
-          <h3>Nexus</h3>
-          <p class="speed">300 Mbps</p>
-          <p class="price">Rp 300rb<span>/bulan</span></p>
-          <p class="old-price">Harga normal: Rp 365rb</p>
-          <ul>
-            <li>Free Speed Boost 400 Mbps</li>
-            <li>Cocok untuk 10 device lebih</li>
-            <li>CCTV dan streaming kualitas HD</li>
-          </ul>
-          <button class="btn btn-outline choose-package" type="button">Pilih Paket</button>
-        </article>
-      </div>
-    </section>
+  <div class="section-header">
+    <p class="eyebrow">Pilihan paket</p>
+    <h2>Paket Internet MyRepublic</h2>
+    <p>
+      Pilih paket internet yang paling sesuai dengan kebutuhan rumah Anda.
+      Setelah memilih paket, Maura akan membantu pengecekan coverage dan proses pengajuan pemasangan.
+    </p>
+  </div>
+
+  <div class="package-grid package-grid-two" id="packageGrid">
+    <article class="package-card popular" data-package="Striker 225Mbps">
+      <span class="badge">Paket Bola</span>
+      <h3>Striker</h3>
+      <p class="speed">225 Mbps</p>
+      <p class="price">Rp 250rb<span>/bulan</span></p>
+      <p class="old-price">Harga promo & normal: Rp 250rb</p>
+      <p class="package-desc">
+        Paket internet cepat untuk streaming pertandingan bola, nonton bareng, dan hiburan keluarga.
+      </p>
+
+      <ul>
+        <li>Termasuk Vidio Platinum</li>
+        <li>Termasuk Fola Play</li>
+        <li>Cocok untuk streaming pesta bola</li>
+      </ul>
+
+      <button class="btn btn-primary choose-package" type="button">
+        Pilih Paket Striker
+      </button>
+    </article>
+
+    <article class="package-card" data-package="Nexus 300Mbps">
+      <span class="badge">Paling Worth It</span>
+      <h3>Nexus</h3>
+      <p class="speed">300 Mbps</p>
+      <p class="price">Rp 300rb<span>/bulan</span></p>
+      <p class="old-price">Harga normal: Rp 365rb</p>
+      <p class="package-desc">
+        Paket internet lebih kencang untuk rumah dengan banyak perangkat, CCTV, dan streaming kualitas HD.
+      </p>
+
+      <ul>
+        <li>Free Speed Boost hingga 400 Mbps</li>
+        <li>Cocok untuk 10+ device</li>
+        <li>Ideal untuk CCTV dan streaming HD</li>
+      </ul>
+
+      <button class="btn btn-outline choose-package" type="button">
+        Pilih Paket Nexus
+      </button>
+    </article>
+  </div>
+</section>
 
     <section class="section-pad benefits-section">
       <div class="section-header">
@@ -182,12 +201,28 @@
 
         <fieldset>
           <legend>Step 3 — Pilih Paket</legend>
-          <div class="form-grid">
-            <label>Paket yang diminati<select name="packageName" id="packageSelect" required><option value="">Pilih paket</option><option>Striker 225Mbps</option><option>Nexus 300Mbps</option></select></label>
-            <label>Promo yang dipilih<input name="promo" placeholder="Contoh: Promo bulan ini / belum tahu" /></label>
-            <label>Catatan tambahan<textarea name="notes" rows="3" placeholder="Contoh: ingin dipasang hari Sabtu jika coverage tersedia"></textarea></label>
-          </div>
-        </fieldset>
+          
+        <div class="form-grid">
+          <label>
+            Paket yang diminati
+            <select name="packageName" id="packageSelect" required>
+              <option value="">Pilih paket</option>
+              <option value="Striker 225Mbps">Striker 225Mbps</option>
+              <option value="Nexus 300Mbps">Nexus 300Mbps</option>
+            </select>
+          </label>
+          
+          <label>
+            Promo yang dipilih
+            <input name="promo" placeholder="Contoh: Promo bulan ini / belum tahu" />
+          </label>
+          
+          <label>
+            Catatan tambahan
+            <textarea name="notes" rows="3" placeholder="Contoh: ingin dipasang hari Sabtu jika coverage tersedia"></textarea>
+          </label>
+        </div>
+      </fieldset>
 
         <fieldset>
           <legend>Step 4 — Konfirmasi</legend>
