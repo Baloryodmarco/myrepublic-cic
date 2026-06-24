@@ -28,3 +28,9 @@ Catatan keamanan:
 
 Catatan:
 Data leads sudah masuk ke Supabase. Untuk sementara, dashboard publik belum digunakan untuk data customer asli karena belum memiliki sistem login. Leads dicek melalui Supabase Table Editor.
+
+Status:
+- Website sudah online melalui GitHub Pages.
+- Form customer sudah terhubung ke Supabase.
+- Data leads sudah masuk ke tabel leads.
+- Dashboard publik dinonaktifkan sementara demi keamanan data customer.
