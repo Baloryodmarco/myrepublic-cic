@@ -25,3 +25,6 @@ Cara update GitHub:
 Catatan keamanan:
 - Supabase publishable/anon key boleh dipakai di frontend jika RLS policy sudah benar.
 - Jangan pernah upload service_role key, database password, atau JWT secret ke GitHub.
+
+Catatan:
+Data leads sudah masuk ke Supabase. Untuk sementara, dashboard publik belum digunakan untuk data customer asli karena belum memiliki sistem login. Leads dicek melalui Supabase Table Editor.
