@@ -3,63 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dashboard Leads | MyRepublic CIC</title>
+  <title>Dashboard Dinonaktifkan - MyRepublic CIC</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="navbar">
-    <a class="brand" href="index.html">
-      <span class="brand-mark">M</span>
-      <span>MyRepublic CIC</span>
-    </a>
-    <nav class="nav-links" aria-label="Navigasi dashboard">
-      <a href="index.html">Landing Page</a>
-    </nav>
-    <button class="btn btn-small btn-secondary" id="exportCsvBtn" type="button">Export CSV</button>
-  </header>
+  <main class="container" style="min-height: 100vh; display: flex; align-items: center; justify-content: center;">
+    <section class="card" style="max-width: 620px; text-align: center;">
+      <p class="eyebrow">MyRepublic CIC</p>
+      <h1>Dashboard Admin Belum Tersedia</h1>
+      <p class="muted">
+        Untuk menjaga keamanan data customer, dashboard publik sementara dinonaktifkan.
+        Leads saat ini dicek langsung melalui Supabase Table Editor.
+      </p>
 
-  <main class="section-pad dashboard-page">
-    <div class="section-header left">
-      <p class="eyebrow">Dashboard lokal</p>
-      <h1>Leads Pengajuan Pemasangan</h1>
-      <p>Untuk prototype ini, data tersimpan di localStorage browser. Pada versi production, data akan masuk ke database seperti Supabase, MySQL, atau PostgreSQL.</p>
-    </div>
-
-    <div class="dashboard-actions">
-      <label>Filter status
-        <select id="statusFilter">
-          <option value="">Semua status</option>
-          <option>Baru Masuk</option>
-          <option>Sudah Dihubungi</option>
-          <option>Menunggu Verifikasi Coverage</option>
-          <option>Menunggu Jadwal Teknisi</option>
-          <option>Proses Pemasangan</option>
-          <option>Berhasil Terpasang</option>
-          <option>Tidak Lanjut</option>
-        </select>
-      </label>
-      <button class="btn btn-outline" id="clearDataBtn" type="button">Hapus Data Demo</button>
-    </div>
-
-    <div class="table-wrap">
-      <table class="leads-table">
-        <thead>
-          <tr>
-            <th>Tanggal</th>
-            <th>Customer</th>
-            <th>WhatsApp</th>
-            <th>Lokasi</th>
-            <th>Paket</th>
-            <th>Coverage</th>
-            <th>Status</th>
-            <th>Catatan</th>
-          </tr>
-        </thead>
-        <tbody id="leadsBody"></tbody>
-      </table>
-    </div>
+      <div style="margin-top: 24px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+        <a class="btn btn-primary" href="index.html">Kembali ke Website</a>
+        <a class="btn btn-outline" href="https://supabase.com/dashboard" target="_blank" rel="noopener">
+          Buka Supabase
+        </a>
+      </div>
+    </section>
   </main>
-
-  <script src="dashboard.js"></script>
 </body>
 </html>
