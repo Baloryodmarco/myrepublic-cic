@@ -212,81 +212,173 @@
     </section>
 
     <section id="form" class="section-pad form-section">
-      <div class="section-header">
-        <p class="eyebrow">Form pengajuan</p>
-        <h2>Kirim Pengajuan Pemasangan</h2>
-        <p>Isi data pemasangan di bawah ini. Data Anda akan dikirim ke sistem MyRepublic CIC untuk membantu pengecekan coverage, konsultasi paket, dan proses pengajuan pemasangan.
-        </p>
+  <div class="section-header">
+    <p class="eyebrow">Form pengajuan</p>
+    <h2>Kirim Pengajuan Pemasangan</h2>
+    <p>
+      Isi data pemasangan di bawah ini agar Maura dapat membantu pengecekan coverage,
+      konsultasi paket, dan proses pengajuan pemasangan MyRepublic.
+    </p>
+  </div>
+
+  <form id="leadForm" class="lead-form">
+    <fieldset>
+      <legend>Step 1 — Lokasi Pemasangan</legend>
+
+      <p class="form-helper">
+        Pastikan alamat yang diisi adalah alamat lokasi pemasangan. Jika sudah mengambil titik GPS di atas,
+        koordinat lokasi akan ikut terkirim otomatis.
+      </p>
+
+      <div class="form-grid">
+        <label>
+          Alamat lengkap
+          <textarea
+            name="address"
+            rows="3"
+            required
+            placeholder="Contoh: Jl. Melati No. 10, dekat minimarket, rumah pagar hitam"
+          ></textarea>
+        </label>
+
+        <label>
+          Kota / Kabupaten
+          <input name="city" required placeholder="Contoh: Jakarta Selatan" />
+        </label>
+
+        <label>
+          Kecamatan
+          <input name="district" required placeholder="Contoh: Jagakarsa" />
+        </label>
+
+        <label>
+          Kelurahan
+          <input name="village" required placeholder="Contoh: Lenteng Agung" />
+        </label>
+
+        <label>
+          RT / RW
+          <input name="rtrw" placeholder="Contoh: RT 03 / RW 05" />
+        </label>
+
+        <label>
+          Patokan rumah
+          <input name="landmark" placeholder="Contoh: sebelah warung / dekat masjid / depan gang" />
+        </label>
+
+        <label>
+          Jenis tempat
+          <select name="propertyType" required>
+            <option value="">Pilih jenis tempat</option>
+            <option value="Rumah">Rumah</option>
+            <option value="Kos">Kos</option>
+            <option value="Apartemen">Apartemen</option>
+            <option value="Ruko">Ruko</option>
+            <option value="Kantor">Kantor</option>
+          </select>
+        </label>
       </div>
-      <form id="leadForm" class="lead-form">
-        <fieldset>
-          <legend>Step 1 — Lokasi Pemasangan</legend>
-          <div class="form-grid">
-            <label>Alamat lengkap<textarea name="address" rows="3" required placeholder="Contoh: Jl. Melati No. 10, dekat minimarket..."></textarea></label>
-            <label>Kota / Kabupaten<input name="city" required placeholder="Contoh: Jakarta Selatan" /></label>
-            <label>Kecamatan<input name="district" required placeholder="Contoh: Jagakarsa" /></label>
-            <label>Kelurahan<input name="village" required placeholder="Contoh: Lenteng Agung" /></label>
-            <label>RT / RW<input name="rtrw" placeholder="Contoh: RT 03 / RW 05" /></label>
-            <label>Patokan rumah<input name="landmark" placeholder="Contoh: rumah pagar hitam sebelah warung" /></label>
-            <label>Jenis tempat<select name="propertyType" required><option value="">Pilih jenis tempat</option><option>Rumah</option><option>Kos</option><option>Apartemen</option><option>Ruko</option><option>Kantor</option></select></label>
-          </div>
-        </fieldset>
+    </fieldset>
 
-        <fieldset>
-          <legend>Step 2 — Data Customer</legend>
-          <div class="form-grid">
-            <label>Nama lengkap<input name="fullName" required placeholder="Nama customer" /></label>
-            <label>Nomor WhatsApp aktif<input name="whatsapp" required placeholder="08xxxxxxxxxx" /></label>
-            <label>Email opsional<input type="email" name="email" placeholder="nama@email.com" /></label>
-            <label>Waktu terbaik dihubungi<select name="contactTime" required><option value="">Pilih waktu</option><option>Pagi</option><option>Siang</option><option>Sore</option><option>Malam</option></select></label>
-          </div>
-        </fieldset>
+    <fieldset>
+      <legend>Step 2 — Data Customer</legend>
 
-        <fieldset>
-          <legend>Step 3 — Pilih Paket</legend>
-          
-        <div class="form-grid">
-          <label>
-            Paket yang diminati
-            <select name="packageName" id="packageSelect" required>
-              <option value="">Pilih paket</option>
-              <option value="Striker 225Mbps">Striker 225Mbps</option>
-              <option value="Nexus 300Mbps">Nexus 300Mbps</option>
-            </select>
-          </label>
-          
-          <label>
-            Promo yang dipilih
-            <input name="promo" placeholder="Contoh: Promo bulan ini / belum tahu" />
-          </label>
-          
-          <label>
-            Catatan tambahan
-            <textarea name="notes" rows="3" placeholder="Contoh: ingin dipasang hari Sabtu jika coverage tersedia"></textarea>
-          </label>
-        </div>
-      </fieldset>
+      <p class="form-helper">
+        Pastikan nomor WhatsApp aktif agar Maura dapat menghubungi Anda untuk proses follow-up.
+      </p>
 
-        <fieldset>
-          <legend>Step 4 — Konfirmasi</legend>
-          <label class="checkbox-label">
-            <input type="checkbox" name="consent" required />
-            <span>Saya setuju data yang saya kirimkan digunakan oleh Maura / MyRepublic CIC untuk pengecekan coverage, konsultasi paket, follow-up melalui WhatsApp, dan proses pengajuan pemasangan layanan MyRepublic.</span>
-          </label>
-        </fieldset>
+      <div class="form-grid">
+        <label>
+          Nama lengkap
+          <input name="fullName" required placeholder="Contoh: Budi Santoso" />
+        </label>
 
-        <p class="privacy-note">
-          Data Anda akan digunakan hanya untuk kebutuhan pengecekan coverage, konsultasi paket, follow-up pengajuan, dan proses pemasangan layanan MyRepublic. Data tidak akan digunakan untuk keperluan lain di luar proses pengajuan layanan.
-        </p>
+        <label>
+          Nomor WhatsApp aktif
+          <input name="whatsapp" required placeholder="Contoh: 081234567890" />
+        </label>
 
-        <input type="hidden" name="latitude" id="latitude" />
-        <input type="hidden" name="longitude" id="longitude" />
-        <input type="hidden" name="accuracy" id="accuracy" />
-        <input type="hidden" name="mapsUrl" id="mapsUrl" />
-        <button class="btn btn-primary btn-full" type="submit">Kirim Pengajuan</button>
-        <p class="form-message" id="formMessage" role="status"></p>
-      </form>
-    </section>
+        <label>
+          Email opsional
+          <input type="email" name="email" placeholder="Contoh: nama@email.com" />
+        </label>
+
+        <label>
+          Waktu terbaik dihubungi
+          <select name="contactTime" required>
+            <option value="">Pilih waktu</option>
+            <option value="Pagi">Pagi</option>
+            <option value="Siang">Siang</option>
+            <option value="Sore">Sore</option>
+            <option value="Malam">Malam</option>
+          </select>
+        </label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Step 3 — Pilih Paket</legend>
+
+      <p class="form-helper">
+        Pilih paket yang paling sesuai. Jika masih bingung, pilih salah satu dulu dan Maura akan bantu konsultasi via WhatsApp.
+      </p>
+
+      <div class="form-grid">
+        <label>
+          Paket yang diminati
+          <select name="packageName" id="packageSelect" required>
+            <option value="">Pilih paket</option>
+            <option value="Striker 225Mbps">Striker 225Mbps</option>
+            <option value="Nexus 300Mbps">Nexus 300Mbps</option>
+          </select>
+        </label>
+
+        <label>
+          Promo yang dipilih
+          <input name="promo" placeholder="Contoh: Promo bulan ini / belum tahu" />
+        </label>
+
+        <label>
+          Catatan tambahan
+          <textarea
+            name="notes"
+            rows="3"
+            placeholder="Contoh: ingin dipasang hari Sabtu jika coverage tersedia"
+          ></textarea>
+        </label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Step 4 — Konfirmasi</legend>
+
+      <label class="checkbox-label">
+        <input type="checkbox" name="consent" required />
+        <span>
+          Saya setuju data yang saya kirimkan digunakan oleh Maura / MyRepublic CIC untuk pengecekan coverage,
+          konsultasi paket, follow-up melalui WhatsApp, dan proses pengajuan pemasangan layanan MyRepublic.
+        </span>
+      </label>
+    </fieldset>
+
+    <p class="privacy-note">
+      Data Anda akan digunakan hanya untuk kebutuhan pengecekan coverage, konsultasi paket,
+      follow-up pengajuan, dan proses pemasangan layanan MyRepublic. Data tidak akan digunakan
+      untuk keperluan lain di luar proses pengajuan layanan.
+    </p>
+
+    <input type="hidden" name="latitude" id="latitude" />
+    <input type="hidden" name="longitude" id="longitude" />
+    <input type="hidden" name="accuracy" id="accuracy" />
+    <input type="hidden" name="mapsUrl" id="mapsUrl" />
+
+    <button class="btn btn-primary btn-full" type="submit">
+      Kirim Pengajuan Sekarang
+    </button>
+
+    <p class="form-message" id="formMessage" role="status"></p>
+  </form>
+</section>
 
     <section class="section-pad faq-section">
       <div class="section-header">
