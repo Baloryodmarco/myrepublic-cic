@@ -140,6 +140,21 @@ input:focus, select:focus, textarea:focus { outline: 3px solid rgba(18,61,255,.1
   margin-top: 22px;
 }
 
+.package-category {
+  margin: 36px 0 18px;
+  text-align: center;
+}
+
+.package-category h3 {
+  margin: 6px 0 0;
+  font-size: 24px;
+  color: #0f172a;
+}
+
+.package-category-margin {
+  margin-top: 56px;
+}
+
 .btn-light-outline {
   background: transparent;
   color: #ffffff;
