@@ -132,6 +132,24 @@ input:focus, select:focus, textarea:focus { outline: 3px solid rgba(18,61,255,.1
   color: #64748b;
 }
 
+.cta-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 22px;
+}
+
+.btn-light-outline {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.btn-light-outline:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
 .small-text {
   font-size: 13px;
   margin-top: 6px;
