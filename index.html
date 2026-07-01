@@ -394,44 +394,52 @@
     </fieldset>
 
     <fieldset>
-      <legend>Step 3 — Pilih Paket</legend>
+  <legend>Step 3 — Pilih Paket</legend>
 
-      <p class="form-helper">
-        Pilih paket yang paling sesuai. Jika masih bingung, pilih salah satu dulu dan Maura akan bantu konsultasi via WhatsApp.
-      </p>
+  <p class="form-helper">
+    Pilih paket yang paling sesuai. Jika masih bingung, pilih salah satu dulu dan Maura akan bantu konsultasi via WhatsApp.
+  </p>
 
-      <div class="form-grid">
-        <label>
-          Paket yang diminati
-          <select name="packageName" id="packageSelect" required>
-  <option value="">Pilih paket</option>
+  <div class="form-grid">
+    <label>
+      Paket yang diminati
+      <select name="packageName" id="packageSelect" required>
+        <option value="">Pilih paket</option>
 
-  <option value="Neo 100Mbps">Neo 100Mbps</option>
-  <option value="Velo 150Mbps">Velo 150Mbps</option>
-  <option value="Nexus 300Mbps">Nexus 300Mbps</option>
+        <option value="Neo 100Mbps">Neo 100Mbps</option>
+        <option value="Velo 150Mbps">Velo 150Mbps</option>
+        <option value="Nexus 300Mbps">Nexus 300Mbps</option>
 
-  <option value="MyGamer Silver 250Mbps">MyGamer Silver 250Mbps</option>
-  <option value="MyGamer Gold 500Mbps">MyGamer Gold 500Mbps</option>
-  <option value="MyGamer Diamond 750Mbps">MyGamer Diamond 750Mbps</option>
-  <option value="MyGamer Platinum 1Gbps">MyGamer Platinum 1Gbps</option>
-</select>
-        </label>
+        <option value="MyGamer Silver 250Mbps">MyGamer Silver 250Mbps</option>
+        <option value="MyGamer Gold 500Mbps">MyGamer Gold 500Mbps</option>
+        <option value="MyGamer Diamond 750Mbps">MyGamer Diamond 750Mbps</option>
+        <option value="MyGamer Platinum 1Gbps">MyGamer Platinum 1Gbps</option>
+      </select>
+    </label>
 
-        <label>
-          Promo yang dipilih
-          <input name="promo" placeholder="Contoh: Promo bulan ini / belum tahu" />
-        </label>
+    <label>
+      Tambahan layanan opsional
+      <select name="sideProduct">
+        <option value="">Tidak pilih tambahan</option>
+        <option value="ComboTV">ComboTV - Rp 95.000/bulan</option>
+      </select>
+    </label>
 
-        <label>
-          Catatan tambahan
-          <textarea
-            name="notes"
-            rows="3"
-            placeholder="Contoh: ingin dipasang hari Sabtu jika coverage tersedia"
-          ></textarea>
-        </label>
-      </div>
-    </fieldset>
+    <label>
+      Promo yang dipilih
+      <input name="promo" placeholder="Contoh: Promo bulan ini / belum tahu" />
+    </label>
+
+    <label>
+      Catatan tambahan
+      <textarea
+        name="notes"
+        rows="3"
+        placeholder="Contoh: ingin dipasang hari Sabtu jika coverage tersedia"
+      ></textarea>
+    </label>
+  </div>
+</fieldset>
 
     <fieldset>
       <legend>Step 4 — Konfirmasi</legend>

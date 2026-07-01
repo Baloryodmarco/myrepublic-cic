@@ -106,6 +106,7 @@ function buildLeadPayload(formData) {
     maps_url: formData.get('mapsUrl') || null,
 
     package_name: formData.get('packageName') || null,
+    side_product: formData.get('sideProduct') || null,
     promo_name: formData.get('promo')?.trim() || null,
     notes: formData.get('notes')?.trim() || null,
 
