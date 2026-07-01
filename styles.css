@@ -166,6 +166,26 @@ input:focus, select:focus, textarea:focus { outline: 3px solid rgba(18,61,255,.1
   color: #0f172a;
 }
 
+.hero-rocket-logo {
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.brand-with-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-with-logo img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
 .category-desc {
   max-width: 680px;
   margin: 10px auto 0;
