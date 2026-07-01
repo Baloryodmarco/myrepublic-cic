@@ -155,6 +155,85 @@ input:focus, select:focus, textarea:focus { outline: 3px solid rgba(18,61,255,.1
   margin-top: 56px;
 }
 
+.package-category {
+  margin: 36px 0 18px;
+  text-align: center;
+}
+
+.package-category h3 {
+  margin: 6px 0 0;
+  font-size: 24px;
+  color: #0f172a;
+}
+
+.category-desc {
+  max-width: 680px;
+  margin: 10px auto 0;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.package-category-margin {
+  margin-top: 56px;
+}
+
+.luxury-package-grid {
+  align-items: stretch;
+}
+
+.luxury-card {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at top right, rgba(250, 204, 21, 0.18), transparent 34%),
+    linear-gradient(145deg, #09090b 0%, #111827 45%, #24103f 100%);
+  color: #ffffff;
+  border: 1px solid rgba(250, 204, 21, 0.28);
+  box-shadow: 0 24px 70px rgba(15, 23, 42, 0.28);
+}
+
+.luxury-card::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  background: linear-gradient(120deg, transparent, rgba(250, 204, 21, 0.16), transparent);
+  pointer-events: none;
+}
+
+.luxury-card h3,
+.luxury-card .speed,
+.luxury-card .price {
+  color: #ffffff;
+}
+
+.luxury-card .old-price,
+.luxury-card .package-desc,
+.luxury-card li {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.luxury-badge {
+  background: linear-gradient(135deg, #facc15, #f59e0b);
+  color: #111827;
+  border: none;
+}
+
+.luxury-featured {
+  border-color: rgba(250, 204, 21, 0.58);
+  transform: translateY(-6px);
+}
+
+.btn-luxury {
+  background: linear-gradient(135deg, #facc15, #f59e0b);
+  color: #111827;
+  border: none;
+}
+
+.btn-luxury:hover {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+}
+
 .btn-light-outline {
   background: transparent;
   color: #ffffff;
