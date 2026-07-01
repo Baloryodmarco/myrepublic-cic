@@ -1,4 +1,4 @@
-const SALES_WA = '6281327424953';
+const SALES_WA = '6285110552933';
 const SUPABASE_URL = 'https://oxhdvcewariltlcsqeqq.supabase.co';
 const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_J8dJT0lq5pF6Du8Xj_R4Aw_kBdXbPuX';
 
